@@ -302,7 +302,7 @@ h2 {
   position: relative;
   display: grid;
   align-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 .kinetic-panel::before {
   content: "";
@@ -328,7 +328,7 @@ h2 {
 .kinetic-step span {
   display: block;
   color: var(--ink);
-  font-size: clamp(3.6rem, 17vw, 6.4rem);
+  font-size: clamp(3.2rem, 14vw, 5.8rem);
   line-height: .82;
   font-weight: 950;
   letter-spacing: 0;
@@ -671,7 +671,7 @@ textarea { min-height: 104px; resize: vertical; }
   main > section { padding: clamp(84px, 9vw, 136px) 24px; }
   .hero {
     min-height: calc(100svh - 64px);
-    grid-template-columns: minmax(0, 7fr) minmax(320px, 5fr);
+    grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
     align-items: center;
     align-content: center;
     gap: clamp(40px, 7vw, 90px);
@@ -685,7 +685,7 @@ textarea { min-height: 104px; resize: vertical; }
   .lead { max-width: 56ch; font-size: clamp(1.15rem, 1.8vw, 1.42rem); }
   .kinetic-panel { min-height: 420px; }
   .kinetic-step { padding-left: 28px; }
-  .kinetic-step span { font-size: clamp(4.8rem, 8vw, 8.4rem); }
+  .kinetic-step span { font-size: clamp(4.4rem, 5.8vw, 6.2rem); }
   .kinetic-step p { font-size: clamp(1.2rem, 1.8vw, 1.65rem); }
   .visual { min-height: 360px; padding: 26px; }
   .word-path { gap: 18px; }
