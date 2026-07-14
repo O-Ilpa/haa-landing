@@ -23,7 +23,7 @@
         <div class="nav-links" id="menu" data-nav-links>
           <a href="patients.html" aria-current="page">Patients</a><a href="doctors.html">Doctors</a><a href="lawyers.html">Lawyers</a><a href="investors.html">Investors</a><a href="ambassadors.html">Ambassadors</a>
         </div>
-        <a class="button primary" data-cta="patient" data-event="patient_start">Start here</a>
+        <a class="button primary" data-cta="patient" data-event="patient_start">Start my recovery</a>
         <button class="menu-button" data-menu-button aria-expanded="false" aria-controls="menu">Menu</button>
       </nav>
     </header>
@@ -32,9 +32,9 @@
         <div>
           <p class="eyebrow">Help after an accident</p>
           <h1>After an accident, start here<span class="dot">.</span></h1>
-          <p class="lead">Tell us what happened once. We'll help coordinate care and support in minutes, without the runaround.</p>
-          <div class="cta-row"><a class="button primary" data-cta="patient" data-event="patient_start">Start here</a><a class="button secondary" href="#how-it-works">See how it works</a></div>
-          <p class="support">A few taps. One clear next step.</p>
+          <p class="lead">Tell your story once. We'll guide what comes next.</p>
+          <div class="cta-row"><a class="button primary" data-cta="patient" data-event="patient_start">Start my recovery</a></div>
+          <p class="support">One clear place to start.</p>
         </div>
         <div class="visual" data-word-path>
           <div class="word-path">
@@ -54,16 +54,14 @@
         </div>
       </section>
       <section class="final">
-        <div><h2>You don't have to figure it out alone<span class="dot">.</span></h2><p class="lead">Start with a few simple details. We'll help make the next step clearer.</p><p class="legal-note" data-legal="emergency"></p></div>
+        <div><h2>You don't have to figure it out alone<span class="dot">.</span></h2><p class="lead">Share one way to reach you. We'll help make the next step clearer.</p><p class="legal-note" data-legal="emergency"></p></div>
         <form id="lead-form" data-audience="patient">
           <label>First name<input name="firstName" autocomplete="given-name" required></label>
-          <label>Mobile phone or email<input name="contact" autocomplete="email" required></label>
-          <label>ZIP code<input name="zip" inputmode="numeric" autocomplete="postal-code" required pattern="[0-9]{5}"></label>
-          <label>Accident type<select name="accidentType" required><option value="">Choose one</option><option>Car accident</option><option>Rideshare accident</option><option>Pedestrian or bicycle accident</option><option>Other</option></select></label>
+          <label>Mobile phone or email<input name="contact" autocomplete="email" inputmode="email" required></label>
           <label class="check"><input type="checkbox" name="consent" required><span>I agree to be contacted about my request.</span></label>
           <label class="hidden-field">Website<input name="website" tabindex="-1" autocomplete="off"></label>
           <div class="form-status" role="status" aria-live="polite"></div>
-          <button class="button primary" type="submit" data-label="Get help now">Get help now</button>
+          <button class="button primary" type="submit" data-label="Start my recovery">Start my recovery</button>
         </form>
       </section>
     </main>
