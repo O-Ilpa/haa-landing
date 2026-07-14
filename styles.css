@@ -311,7 +311,7 @@ h2 {
   top: 12%;
   bottom: 12%;
   width: 4px;
-  background: var(--accent);
+  background: #d1d5db;
 }
 .kinetic-step {
   grid-area: 1 / 1;
