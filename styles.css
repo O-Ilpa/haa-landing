@@ -241,8 +241,7 @@ main > section {
   min-height: calc(100svh - 65px - env(safe-area-inset-top));
   display: grid;
   grid-template-columns: 1fr;
-  align-content: start;
-  gap: 24px;
+  align-content: center;
   padding-top: 34px;
   padding-bottom: 34px;
 }
@@ -275,7 +274,7 @@ h1, h2 {
 }
 h1 {
   font-size: clamp(2.75rem, 11.5vw, 4rem);
-  max-width: 10ch;
+  max-width: 12ch;
 }
 h2 {
   font-size: clamp(2.15rem, 8.4vw, 3.9rem);
@@ -625,16 +624,15 @@ textarea { min-height: 104px; resize: vertical; }
   main > section { padding: clamp(84px, 9vw, 136px) 24px; }
   .hero {
     min-height: calc(100svh - 64px);
-    grid-template-columns: minmax(0, 7fr) minmax(320px, 5fr);
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
     align-content: center;
-    gap: clamp(40px, 7vw, 90px);
   }
   .hero.dark {
     padding-left: max(24px, calc((100vw - var(--max)) / 2 + 24px));
     padding-right: max(24px, calc((100vw - var(--max)) / 2 + 24px));
   }
-  h1 { font-size: clamp(4.8rem, 7.4vw, 7.5rem); }
+  h1 { font-size: clamp(4.8rem, 7.4vw, 7.5rem); max-width: 12ch; }
   h2 { font-size: clamp(3.6rem, 5vw, 5.4rem); }
   .lead { max-width: 56ch; font-size: clamp(1.15rem, 1.8vw, 1.42rem); }
   .visual { min-height: 360px; padding: 26px; }
