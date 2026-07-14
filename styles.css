@@ -297,6 +297,31 @@ h2 {
 .cta-row .button { width: 100%; }
 .support { color: var(--muted); font-size: 15px; margin-top: 14px; }
 .dot { color: var(--accent); }
+.hero-path {
+  display: grid;
+  gap: 10px;
+  max-width: 760px;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.35;
+}
+.hero-path span {
+  display: block;
+}
+.hero-path strong {
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--ink);
+  font-weight: 900;
+}
+.dark .hero-path {
+  border-top-color: #333;
+  color: #d0d0d0;
+}
+.dark .hero-path strong { color: white; }
 
 .visual {
   border: 1px solid var(--line);
@@ -635,6 +660,17 @@ textarea { min-height: 104px; resize: vertical; }
   h1 { font-size: clamp(4.8rem, 7.4vw, 7.5rem); max-width: 12ch; }
   h2 { font-size: clamp(3.6rem, 5vw, 5.4rem); }
   .lead { max-width: 56ch; font-size: clamp(1.15rem, 1.8vw, 1.42rem); }
+  .hero-path {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 34px;
+    padding-top: 22px;
+  }
+  .hero-path span + span {
+    padding-left: 22px;
+    border-left: 1px solid var(--line);
+  }
+  .dark .hero-path span + span { border-left-color: #333; }
   .visual { min-height: 360px; padding: 26px; }
   .word-path { gap: 18px; }
   .word-path button {
