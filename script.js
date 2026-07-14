@@ -168,7 +168,6 @@
       const states = Array.from(visual.querySelectorAll("[data-state]"));
       const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       let index = 0;
-      let timer = null;
 
       function setState(next) {
         index = next;
@@ -182,24 +181,6 @@
       });
 
       setState(reduced ? states.length - 1 : 0);
-      if (reduced || !states.length) return;
-
-      const observer = new IntersectionObserver((entries) => {
-        const visible = entries.some((entry) => entry.isIntersecting);
-        window.clearInterval(timer);
-        if (!visible || document.hidden) return;
-        timer = window.setInterval(() => {
-          if (index >= states.length - 1) {
-            window.clearInterval(timer);
-            return;
-          }
-          setState(index + 1);
-        }, 1050);
-      });
-      observer.observe(visual);
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) window.clearInterval(timer);
-      });
     });
   }
 
@@ -208,7 +189,6 @@
       const buttons = Array.from(path.querySelectorAll("button"));
       const traveler = path.querySelector(".traveler");
       const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      let timer = null;
 
       function setActive(i) {
         buttons.forEach((button, index) => {
@@ -232,21 +212,6 @@
       }
 
       setActive(0);
-      const observer = new IntersectionObserver((entries) => {
-        const visible = entries.some((entry) => entry.isIntersecting);
-        window.clearInterval(timer);
-        if (!visible || document.hidden) return;
-        let step = 0;
-        timer = window.setInterval(() => {
-          step += 1;
-          setActive(Math.min(step, buttons.length - 1));
-          if (step >= buttons.length - 1) window.clearInterval(timer);
-        }, 950);
-      });
-      observer.observe(path);
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) window.clearInterval(timer);
-      });
     });
   }
 
