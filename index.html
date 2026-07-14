@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accident Help | HelpAfterAccident</title>
+    <meta name="description" content="Tell HelpAfterAccident what happened once and get help coordinating care and support after an accident.">
+    <meta property="og:title" content="Accident Help | HelpAfterAccident">
+    <meta property="og:description" content="A few taps. One clear next step after an accident.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="public/brand/icon.svg">
+    <link rel="apple-touch-icon" href="public/brand/icon.svg">
+    <link rel="canonical" href="index.html">
+    <link rel="stylesheet" href="styles.css">
+    <script src="config.js"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"HelpAfterAccident","url":"https://helpafteraccident.com"}</script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main">
+        <a class="logo" href="patients.html"><img src="public/brand/logo.svg" alt="HelpAfterAccident"></a>
+        <div class="nav-links" id="menu" data-nav-links>
+          <a href="patients.html" aria-current="page">Patients</a><a href="doctors.html">Doctors</a><a href="lawyers.html">Lawyers</a><a href="investors.html">Investors</a><a href="ambassadors.html">Ambassadors</a>
+        </div>
+        <a class="button primary" data-cta="patient" data-event="patient_start">Start here</a>
+        <button class="menu-button" data-menu-button aria-expanded="false" aria-controls="menu">Menu</button>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Help after an accident</p>
+          <h1>After an accident, start here<span class="dot">.</span></h1>
+          <p class="lead">Tell us what happened once. We'll help coordinate care and support in minutes, without the runaround.</p>
+          <div class="cta-row"><a class="button primary" data-cta="patient" data-event="patient_start">Start here</a><a class="button secondary" href="#how-it-works">See how it works</a></div>
+          <p class="support">A few taps. One clear next step.</p>
+        </div>
+        <div class="visual" data-word-path>
+          <div class="word-path">
+            <span class="traveler" aria-hidden="true"></span>
+            <button type="button">Crash.<p>Tell us what happened.</p></button>
+            <button type="button">Click.<p>Choose the help you need.</p></button>
+            <button type="button">Coordinate.<p>We help line up what comes next.</p></button>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <h2>Three steps. One clear next move<span class="dot">.</span></h2>
+        <div class="steps">
+          <div class="step"><div class="step-number">1</div><h3>Tell us.</h3><p>Share the basics once.</p></div>
+          <div class="step"><div class="step-number">2</div><h3>Get connected.</h3><p>We help find the right care and support.</p></div>
+          <div class="step"><div class="step-number">3</div><h3>Keep moving.</h3><p>Your next steps stay clear and connected.</p></div>
+        </div>
+      </section>
+      <section class="final">
+        <div><h2>You don't have to figure it out alone<span class="dot">.</span></h2><p class="lead">Start with a few simple details. We'll help make the next step clearer.</p><p class="legal-note" data-legal="emergency"></p></div>
+        <form id="lead-form" data-audience="patient">
+          <label>First name<input name="firstName" autocomplete="given-name" required></label>
+          <label>Mobile phone or email<input name="contact" autocomplete="email" required></label>
+          <label>ZIP code<input name="zip" inputmode="numeric" autocomplete="postal-code" required pattern="[0-9]{5}"></label>
+          <label>Accident type<select name="accidentType" required><option value="">Choose one</option><option>Car accident</option><option>Rideshare accident</option><option>Pedestrian or bicycle accident</option><option>Other</option></select></label>
+          <label class="check"><input type="checkbox" name="consent" required><span>I agree to be contacted about my request.</span></label>
+          <label class="hidden-field">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+          <div class="form-status" role="status" aria-live="polite"></div>
+          <button class="button primary" type="submit" data-label="Get help now">Get help now</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><span>HelpAfterAccident</span><div class="footer-links"><a href="mailto:contact@helpafteraccident.com">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><span>&copy; 2026</span></div></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">HelpAfterAccident temporary icon</title>
+  <rect width="512" height="512" rx="96" fill="#080808"/>
+  <path d="M116 274h118v96h72V142h-72v70H116v62Zm280 0H278v-62h118v62Z" fill="#ffffff"/>
+  <circle cx="366" cy="354" r="32" fill="#cc007e"/>
+</svg>
