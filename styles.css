@@ -145,6 +145,7 @@ button, input, select, textarea { font: inherit; }
 }
 .phone-link {
   white-space: nowrap;
+  font-family: "Nunito Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(1.35rem, 2.3vw, 2rem);
   line-height: 1;
   font-weight: 900;
