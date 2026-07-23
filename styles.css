@@ -602,8 +602,8 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 999px;
   color: var(--ink);
   border: 1px solid var(--line);
@@ -639,6 +639,10 @@ h2 {
   letter-spacing: 0;
   max-width: none;
 }
+.bolded {
+  font-weight: bold;
+  color: rgb(167, 2, 2);
+}
 .index-v3 #how-it-works .steps {
   grid-template-columns: 1fr;
   gap: 20px;
@@ -665,7 +669,7 @@ h2 {
   place-items: center;
   border-radius: 999px;
   color: var(--accent);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
 }
