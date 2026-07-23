@@ -155,6 +155,10 @@ button, input, select, textarea { font: inherit; }
   color: var(--accent);
   font-weight: 900;
 }
+.phone-link strong {
+  color: var(--ink);
+  font-weight: 900;
+}
 .language-button {
   display: inline-flex;
   align-items: center;
