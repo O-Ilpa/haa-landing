@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc></url>
+  <url><loc>/index.html</loc></url>
   <url><loc>/patients.html</loc></url>
   <url><loc>/doctors.html</loc></url>
   <url><loc>/lawyers.html</loc></url>
