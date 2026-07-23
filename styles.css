@@ -144,12 +144,10 @@ button, input, select, textarea { font: inherit; }
   font-size: clamp(1.35rem, 2.3vw, 2rem);
   line-height: 1;
   font-weight: 900;
-  background: linear-gradient(90deg, #1e40af 0%, #cc007e 50%, #1e40af 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: gradient-move 2.5s linear infinite;
+  color: var(--ink);
+}
+.phone-link span {
+  color: var(--accent);
 }
 .language-button {
   display: inline-flex;
