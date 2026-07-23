@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap");
+
 :root {
   --ink: #111111;
   --paper: #ffffff;
@@ -111,8 +113,9 @@ button, input, select, textarea { font: inherit; }
   border: 0;
   background: transparent;
   color: #0f172a;
+  font-family: "Nunito Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: inherit;
-  font-weight: 800;
+  font-weight: 400;
   text-transform: capitalize;
   padding: 0;
   cursor: pointer;
@@ -131,8 +134,9 @@ button, input, select, textarea { font: inherit; }
 }
 .nav-dropdown-menu a {
   color: #475569;
+  font-family: "Nunito Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
-  font-weight: 750;
+  font-weight: 400;
 }
 .header-actions {
   display: none;
